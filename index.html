@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam's Club – Claim Your $750 Coupon</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Helvetica, Arial, sans-serif; background: #e9eef4; color: #1c1c1c; min-height: 100vh; padding: 16px; }
+    .wrap { max-width: 480px; margin: 0 auto; }
+
+    .stars { display: flex; justify-content: center; gap: 4px; margin-bottom: 10px; }
+    .stars svg { width: 20px; height: 20px; }
+
+    .hero { width: 100%; aspect-ratio: 448 / 232; margin: 0 auto 12px; border-radius: 16px; overflow: hidden; background: #f5f5f5; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 67%; display: block; }
+
+    h1 { text-align: center; font-size: 22px; font-weight: 800; line-height: 1.2; color: #1E468A; margin-bottom: 6px; }
+    .sub { text-align: center; font-size: 14px; color: #6b7280; margin-bottom: 12px; }
+
+    .steps { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+    .step { display: flex; align-items: center; gap: 12px; background: #fff; border: 1px solid #d1d5db; border-radius: 12px; padding: 6px 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .step-num { min-width: 28px; height: 28px; border-radius: 50%; background: #1E468A; color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-text { font-size: 13px; font-weight: 500; color: #1c1c1c; line-height: 1.35; }
+
+    .cta-btn { display: block; width: 100%; background: #1E468A; color: #fff; text-align: center; padding: 14px; border-radius: 12px; font-size: 18px; font-weight: 700; text-decoration: none; letter-spacing: 0.3px; transition: background 0.18s, transform 0.1s; margin-bottom: 8px; }
+    .cta-btn:hover { background: #163566; }
+    .cta-btn:active { transform: scale(0.99); }
+
+    .disclaimer { text-align: center; font-size: 11px; color: #9ca3af; line-height: 1.6; margin-bottom: 12px; }
+
+    .faq-title { font-size: 17px; font-weight: 800; color: #1E468A; margin-bottom: 6px; }
+    .faq-box { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); overflow: hidden; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 8px 14px; font-size: 13.5px; font-weight: 700; color: #1c1c1c; font-family: inherit; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .faq-chevron { color: #6b7280; font-size: 16px; line-height: 1; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-answer { display: none; padding: 0 14px 12px; font-size: 12.5px; color: #6b7280; line-height: 1.6; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .social { margin-top: 12px; display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .social-check { width: 24px; height: 24px; border-radius: 50%; background: #27AE60; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .social-check svg { width: 14px; height: 14px; }
+    .social p { font-size: 12.5px; color: #1c1c1c; transition: opacity 0.3s ease; }
+    .social p.fade { opacity: 0; }
+    .social p strong { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="stars">
+      <svg viewBox="0 0 24 24" fill="#1E468A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#1E468A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="#1E468A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    </div>
+
+    <div class="hero">
+      <img src="https://media.base44.com/images/public/6a7f239eacac206d3a5c23dc/3d46cbfdc_Screenshot_20261026_170835.jpg" alt="Sam's Club gift cards" />
+    </div>
+
+    <h1>Claim Your $750 Sam's Club Coupon Today!</h1>
+    <p class="sub">Complete the steps below to unlock your rewards</p>
+
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-text">Tap the button below to begin and receive your reward.</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-text">Enter your email and a few basic details to continue.</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-text">Complete 3-5 recommended deals to qualify for your reward.</div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-text">Follow the final step to claim your Sam's Club reward.</div></div>
+    </div>
+
+    <a class="cta-btn" href="https://trksy.org/aff_c?offer_id=2965&aff_id=186911" target="_blank" rel="noopener">Claim Now</a>
+
+    <p class="disclaimer">By clicking “Claim Now”, you agree to complete the required steps to receive your gift card.</p>
+
+    <div class="faq-title">FAQ</div>
+    <div class="faq-box">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How does this work?<span class="faq-chevron">&#8964;</span></button>
+        <div class="faq-answer">Tap “Claim Now”, complete the short registration, and finish the recommended deals shown to you. Once they are verified, your $750 Sam's Club reward is released.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Is this offer legitimate?<span class="faq-chevron">&#8964;</span></button>
+        <div class="faq-answer">Yes. The promotion is sponsored by our advertising partners, and every deal explains exactly what is required before you agree to it. There is no charge to take part.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What deals do I need to complete?<span class="faq-chevron">&#8964;</span></button>
+        <div class="faq-answer">Deals are free or low-cost offers from our sponsors — things like a free trial sign-up, a short survey, or an app download. Each one clearly lists its requirements up front.</div>
+      </div>
+    </div>
+
+    <div class="social">
+      <div class="social-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <p id="claim-text"><strong>Emily T.</strong> from Dallas just claimed their gift card.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    const CLAIMS = [
+      { name: 'Emily T.', city: 'Dallas' },
+      { name: 'Marcus J.', city: 'Phoenix' },
+      { name: 'Sophia R.', city: 'Atlanta' },
+      { name: 'David L.', city: 'Chicago' },
+      { name: 'Ashley M.', city: 'Tampa' },
+      { name: 'James K.', city: 'Columbus' }
+    ];
+    let claimIndex = 0;
+    const claimText = document.getElementById('claim-text');
+
+    setInterval(function () {
+      claimText.classList.add('fade');
+      setTimeout(function () {
+        claimIndex = (claimIndex + 1) % CLAIMS.length;
+        const c = CLAIMS[claimIndex];
+        claimText.innerHTML = '<strong>' + c.name + '</strong> from ' + c.city + ' just claimed their gift card.';
+        claimText.classList.remove('fade');
+      }, 300);
+    }, 3500);
+  </script>
+</body>
+</html>
